@@ -31,6 +31,18 @@
     myObject.double();
     console.log(myObject.value);
     console.log(myObject);
+
+    var quo = function(s) {
+    	this.status = s;
+    };
+    	quo.prototype.getstatus = function(){
+    		return this.status;
+    };
+    var myQuo = new quo("confused");
+        console.log(myQuo.getstatus());      
+    
+
+
 	</script>
 </head>
 <body>
